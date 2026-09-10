@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Studio Wagner Cabeleireiros</title>
+  <meta name="description" content="Studio Wagner Cabeleireiros — unidades Santa Cecília e Casa Verde, São Paulo." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..700&family=Public+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { ink: "#f4efe6", muted: "#9c9188", gold: "#c9a24b", charcoal: "#14110f", surface: "#1d1815", surface2: "#241f1b" },
+          fontFamily: { display: ["Fraunces", "serif"], body: ["Public Sans", "sans-serif"], mono: ["Space Mono", "monospace"], wagner: ["Alex Brush", "cursive"] }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-charcoal text-ink font-body text-base leading-relaxed antialiased">
+
+  <header class="sticky top-0 z-10 border-b border-ink/15 bg-charcoal/90 backdrop-blur-md">
+    <div class="mx-auto flex flex-wrap items-center justify-between gap-6 px-6 py-3.5">
+      <a class="flex items-center gap-3 font-display text-xl tracking-wide text-ink" href="index.html">
+        <img class="h-20 w-auto" src="assets/logo.png" alt="Studio Wagner Cabeleireiros" />
+      </a>
+      <nav class="flex flex-wrap items-center gap-x-7 gap-y-2 font-mono text-sm uppercase tracking-wider" aria-label="Navegação principal">
+        <a href="index.html" aria-current="page" class="text-gold">Início</a>
+        <a href="#unidades" class="rounded-sm border border-gold px-2 py-1 text-gold hover:bg-gold hover:text-charcoal">Studios</a>
+        <a href="#catalogo" class="text-gold">Catálogo</a>
+        <a href="#contato" class="text-gold">Contato</a>
+        <a href="#sobre" class="text-gold">Sobre</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="px-6 py-20 text-center">
+      <div class="mx-auto max-w-6xl">
+        <p class="mb-4 font-mono text-xs uppercase tracking-[0.18em] text-white">Desde 1987 — São Paulo</p>
+        <div class="relative inline-block mx-auto mb-6">
+          <h1 class="font-wagner text-gold text-7xl leading-none">Wagner</h1>
+          <span class="absolute -bottom-3 right--0 text-sm tracking-[0.1em] text-gold">
+            CABELEIREIROS
+          </span>
+          <p class="font-wagner absolute -bottom-12 right-0 text-lg tracking-[0.2em] text-gold">
+          Studio Conceito
+        </p>
+        </div>
+        <br><br><br><br>
+        <p class="mx-auto text-lg text-muted">
+          O <span class="font-wagner text-2xl text-gold">Studio Wagner Cabeleireiros</span> é único. Em nossos <span class="text-2xl font-wagner text-gold">Studios</span> você encontrará sempre a tendência do que existe de mais moderno e sofisticado no mundo Fashion Hair. 
+          O espaço é agradável, moderno e confortável e está sob coordenação de <span class="text-2xl font-wagner text-gold">Wagner Coelho</span>. O primeiro Studio foi aberto em 1987, no bairro Santa Cecília em São Paulo.
+          Em junho de 1997, o <span class="text-2xl font-wagner text-gold">Studio Wagner Cabeleireiros</span> abriu mais um espaço, localizado no bairro de Casa Verde, oferecendo mais uma opção para seus clientes. 
+          Aqui você é a pessoa mais importante. Deixar nossos clientes realizados e satisfeitos é definitivamente a nossa missão.
+        </p>
+      </div>
+    </section>
+
+    <hr class="mx-auto my-8 h-px w-full max-w-6xl border-0 bg-gradient-to-r from-transparent via-gold to-transparent" />
+
+    <section id="unidades" class="px-6 py-16">
+      <div class="mx-auto max-w-6xl">
+        <div class="mb-8 flex flex-wrap text-center items-baseline justify-between gap-4">
+          <h2 class="font-display text-4xl">Nossas unidades</h2>
+          <span class="font-mono text-xs uppercase tracking-widest text-muted">2 studios em São Paulo</span>
+        </div>
+        <div class="grid gap-10 md:grid-cols-2">
+
+          <a href="studio1.html" class="block">
+            <article class="flex flex-col overflow-hidden rounded-sm border border-ink/15 bg-surface transition duration-200 hover:-translate-y-1 hover:border-gold">
+              <img class="aspect-[16/16] w-full object-cover" src="assets/frente.jpg" alt="Studio Santa Cecília" />
+              <div class="p-5 pb-6">
+                <p class="font-mono text-xs tracking-wider text-white">Desde 1987</p>
+                <h3 class="my-1.5 font-display text-gold text-2xl">Studio I - Santa Cecília</h3>
+                <p class="mb-3.5 text-[15px] text-muted">O primeiro Studio Wagner Cabeleireiros, no bairro Santa Cecília.</p>
+                <span class="text-gold hover:underline">Conhecer o Studio →</span>
+              </div>
+            </article>
+          </a>
+
+          <a href="studio2.html" class="block">
+            <article class="flex flex-col overflow-hidden rounded-sm border border-ink/15 bg-surface transition duration-200 hover:-translate-y-1 hover:border-gold">
+              <img class="aspect-[16/9] w-full object-cover" src="assets/casa-verde.webp" alt="Studio Casa Verde" />
+              <div class="p-5 pb-6">
+                <p class="font-mono text-xs tracking-wider text-white">Desde 1997</p>
+                <h3 class="my-1.5 font-display text-gold text-2xl">Studio II - Casa Verde</h3>
+                <p class="mb-3.5 text-[15px] text-muted">Uma nova opção para os nossos clientes, no bairro Casa Verde.</p>
+                <span class="text-gold hover:underline">Conhecer o Studio →</span>
+            </div>
+          </article>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <hr class="mx-auto my-8 h-px w-full max-w-6xl border-0 bg-gradient-to-r from-transparent via-gold to-transparent" /> 
+
+    <section id="catalogo" class="px-6 py-16">
+      <div class="mx-auto max-w-6xl">
+        <div class="mb-9 flex flex-wrap items-baseline justify-between gap-4">
+          <h2 class="font-display text-4xl">Catálogo</h2>
+          <span class="font-mono text-xs uppercase tracking-widest text-muted">Produtos à venda no salão</span>
+        </div>
+        <p class="mb-6 max-w-3xl text-[17px] text-muted">
+          Os produtos que usamos e recomendamos no dia a dia, disponíveis
+          para compra em qualquer uma das unidades.
+        </p>
+        <div id="catalogo-grid" class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4" data-state="loading" data-message="Carregando catálogo..."></div>
+      </div>
+    </section>
+
+    <hr class="mx-auto my-8 h-px w-full max-w-6xl border-0 bg-gradient-to-r from-transparent via-gold to-transparent" />
+
+    <section id="contato" class="px-6 py-16">
+      <div class="mx-auto max-w-6xl">
+        <div class="flex flex-wrap items-center justify-between gap-6 rounded-sm border border-ink/15 bg-surface p-10 max-sm:flex-col max-sm:items-start">
+          <div>
+            <h2 class="mb-2 font-display text-3xl">Agende seu horário</h2>
+            <p class="max-w-xl text-muted">Fale com a gente pelo WhatsApp e marque seu horário em minutos.</p>
+          </div>
+          <a id="btn-whatsapp-santa-cecilia" class="inline-flex items-center gap-2 whitespace-nowrap rounded-md bg-[#25d366] px-5 py-3.5 font-mono text-sm uppercase tracking-wider text-white hover:bg-[#1ebc59]" href="#" target="_blank" rel="noopener" aria-label="WhatsApp Studio Santa Cecília">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="h-5 w-5 fill-current">
+              <path d="M12.04 2C6.58 2 2.15 6.39 2.15 11.85c0 2.08.61 4.12 1.77 5.9L2 22l4.46-1.83c1.67.91 3.54 1.39 5.58 1.39 5.46 0 9.89-4.39 9.89-9.85C21.93 6.39 17.5 2 12.04 2zm0 17.98c-1.72 0-3.38-.47-4.81-1.34l-.35-.2-2.64 1.08 1.09-2.57-.23-.36A7.68 7.68 0 0 1 4.18 11.9c0-4.26 3.48-7.74 7.86-7.74 4.38 0 7.86 3.48 7.86 7.74 0 4.25-3.48 7.74-7.86 7.74zm4.33-5.85c-.24-.12-1.4-.69-1.62-.77-.22-.08-.38-.12-.54.12-.16.24-.62.77-.77.93-.14.16-.28.18-.52.06-.24-.12-1.01-.37-1.93-1.19-.71-.63-1.2-1.41-1.34-1.65-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.19-.46-.39-.4-.54-.4h-.46c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.03s.87 2.35.99 2.51c.12.16 1.7 2.6 4.12 3.65.58.25 1.02.4 1.37.52.58.19 1.1.16 1.52.1.46-.07 1.4-.57 1.6-1.12.2-.55.2-1.02.14-1.12-.06-.1-.22-.16-.46-.28z"/>
+            </svg>
+            <span>Albuquerque Lins</span>
+          </a>
+          <a id="btn-whatsapp-casa-verde" class="inline-flex items-center gap-2 whitespace-nowrap rounded-md bg-[#25d366] px-5 py-3.5 font-mono text-sm uppercase tracking-wider text-white hover:bg-[#1ebc59]" href="#" target="_blank" rel="noopener" aria-label="WhatsApp Studio Casa Verde">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="h-5 w-5 fill-current">
+              <path d="M12.04 2C6.58 2 2.15 6.39 2.15 11.85c0 2.08.61 4.12 1.77 5.9L2 22l4.46-1.83c1.67.91 3.54 1.39 5.58 1.39 5.46 0 9.89-4.39 9.89-9.85C21.93 6.39 17.5 2 12.04 2zm0 17.98c-1.72 0-3.38-.47-4.81-1.34l-.35-.2-2.64 1.08 1.09-2.57-.23-.36A7.68 7.68 0 0 1 4.18 11.9c0-4.26 3.48-7.74 7.86-7.74 4.38 0 7.86 3.48 7.86 7.74 0 4.25-3.48 7.74-7.86 7.74zm4.33-5.85c-.24-.12-1.4-.69-1.62-.77-.22-.08-.38-.12-.54.12-.16.24-.62.77-.77.93-.14.16-.28.18-.52.06-.24-.12-1.01-.37-1.93-1.19-.71-.63-1.2-1.41-1.34-1.65-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.19-.46-.39-.4-.54-.4h-.46c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.03s.87 2.35.99 2.51c.12.16 1.7 2.6 4.12 3.65.58.25 1.02.4 1.37.52.58.19 1.1.16 1.52.1.46-.07 1.4-.57 1.6-1.12.2-.55.2-1.02.14-1.12-.06-.1-.22-.16-.46-.28z"/>
+            </svg>
+            <span>Casa Verde</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-ink/15 px-6 py-8 text-[13px] text-muted">
+    <div class="mx-auto flex w-full max-w-6xl flex-wrap justify-between gap-3">
+      <span>© Direitos Reservados | Wagner Cabeleireiros</span>
+      <span>Santa Cecília · Casa Verde — São Paulo, SP</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

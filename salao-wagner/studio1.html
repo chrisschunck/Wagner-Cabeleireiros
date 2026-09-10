@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Studio Santa Cecília — Wagner Cabeleireiros</title>
+  <meta name="description" content="Studio Wagner Cabeleireiros, unidade Santa Cecília, São Paulo, desde 1987." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..700&family=Public+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { theme: { extend: { colors: { ink: "#f4efe6", muted: "#9c9188", gold: "#c9a24b", charcoal: "#14110f", surface: "#1d1815" }, fontFamily: { display: ["Fraunces", "serif"], body: ["Public Sans", "sans-serif"], mono: ["Space Mono", "monospace"], wagner: ["Alex Brush", "cursive"] } } } };</script>
+</head>
+<body class="bg-charcoal text-ink font-body text-base leading-relaxed antialiased">
+
+  <header class="sticky top-0 z-10 border-b border-ink/15 bg-charcoal/90 backdrop-blur-md">
+    <div class="mx-auto flex flex-wrap items-center justify-between gap-6 px-6 py-3.5">
+      <a class="flex items-center gap-3 font-display text-xl tracking-wide text-ink" href="index.html">
+        <img class="h-20 w-auto" src="assets/logo.png" alt="Studio Wagner Cabeleireiros" />
+      </a>
+      <nav class="flex flex-wrap items-center text-gold gap-x-7 gap-y-2 font-mono text-sm uppercase tracking-wider" aria-label="Navegação principal">
+        <a href="index.html" class="text-gold">Início</a>
+        <a href="#unidades" class="rounded-sm border border-gold px-2 py-1 text-gold hover:bg-gold hover:text-charcoal">Studios</a>
+        <a href="index.html#catalogo" class="text-gold">Catálogo</a>
+        <a href="#equipe_santa_cecilia" class="text-gold">Equipe</a>
+        <a href="#contato" class="text-gold">Contato</a>
+        <a href="index.html#sobre" class="text-gold">Sobre</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="relative isolate overflow-hidden px-6 py-28 text-center">
+      <video class="absolute inset-0 -z-20 h-full w-full object-cover" autoplay muted loop playsinline aria-hidden="true">
+        <source src="assets/video.mp4" type="video/mp4" />
+      </video>
+      <div class="absolute inset-0 -z-10 bg-charcoal/75"></div>
+      <div class="relative mx-auto max-w-6xl">
+        <p class="mb-4 font-mono text-xs uppercase tracking-[0.18em] text-white">Desde 1987</p>
+        <h1 class="mb-5 font-display font-wagner leading-none text-7xl font-semibold leading-tight text-gold sm:text-7xl">Studio Santa Cecília</h1>
+        <p class="mx-auto max-w-2xl text-lg text-muted">
+          O primeiro <span class="font-wagner text-2xl text-gold">Studio Wagner Cabeleireiros</span>, aberto em 1987 no bairro
+          Santa Cecília, em São Paulo. Onde tudo começou.
+        </p>
+      </div>
+    </section>
+     
+    <hr class="mx-auto my-8 h-px w-full max-w-6xl border-0 bg-gradient-to-r from-transparent via-gold to-transparent" />
+
+    <br>
+    <br>
+
+    <div class="mb-8 text-center">
+        <div>
+          <h2 class="font-display text-4xl">SERVIÇOS</h2>
+          <p class="mt-2 text-muted">Conheça os serviços que oferecemos para te deixar ainda mais bonita</p>
+          <div class="my-5 font-mono  uppercase tracking-widest text-gold">
+            <span>&#10625; STUDIO I &#10625; ALBUQUERQUE LINS &#10625;</span></div>
+          </div>
+        </div>
+
+       <div class="mb-8 mx-auto max-w-7xl text-center grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="cols-xs-8 cols-sm-8 cols-lg-8">
+        <div class="cols-md-4 cols-sm-4">
+          <h6>CABELO</h6>
+          <div class="text-gold">&#10003 Cortes</div>
+          <div class="text-gold">&#10003 Hidratação</div>
+          <div class="text-gold">&#10003 Cauterização</div>
+          <div class="text-gold">&#10003 Químicas</div>
+        </div>
+        </div>
+
+    <div class="cols-md-4 cols-sm-4">
+    <div class="cols-xs-8 cols-sm-8 cols-lg-8">
+          <h6>CORPO E PELE</h6>
+          <div>
+          <div class="text-gold">&#10003 Manicure</div>
+          <div class="text-gold">&#10003 Pedicure</div>
+          <div class="text-gold">&#10003 Barba</div>
+          <div class="text-gold">&#10003 Depilação</div>
+          <div class="text-gold">&#10003 Limpeza de pele</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cols-md-4 cols-sm-4">
+    <div class="cols-xs-8 cols-sm-8 cols-lg-8">
+          <h6>ESPECIAL</h6>
+          <div>
+          <div class="text-gold">&#10003 Dia da noiva</div>
+          <div style="color: rgb(107, 107, 102);">&#10006 SPA</div>
+          <div class="text-gold">&#10003 Maquiagem</div>
+          <div class="text-gold">&#10003 Penteado</div>
+          <div style="color: rgb(107, 107, 102);">&#10006 Massagem</div>
+          <div style="color: rgb(107, 107, 102);">&#10006 Micropigmentação</div>
+          <div class="text-gold">&#10003 Podologia</div>
+        </div>
+      </div>
+    </div>
+     </div>
+     </div>
+     <br>
+     <br>
+
+
+    <section id="sobre-unidade" class="px-6 py-16">
+      <div class="mx-auto max-w-6xl">
+        <div class="mb-9 flex items-baseline justify-between gap-4">
+          <h2 class="font-display text-4xl">A UNIDADE</h2>
+        </div>
+        <img class="mb-6 max-w-[480px] rounded-sm" src="assets/santa-cecilia.webp" alt="Studio Santa Cecília" />
+         <div class="mt-10"></div>
+    
+     <br>
+     <hr class="mx-auto my-8 h-px w-full max-w-6xl border-0 bg-gradient-to-r from-transparent via-gold to-transparent" />
+
+      <section id="equipe_santa_cecilia" class="px-6 py-16">
+      <div class="mx-auto max-w-6xl">
+        <div class="mb-9 flex flex-wrap items-baseline justify-between gap-4">
+          <h2 class="font-display text-4xl">EQUIPE</h2>
+        </div>
+        <div id="equipe-santa-cecília-grid" class="grid sm:grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-4"></div>
+      </div>
+    </section>
+    </div>
+      </div>
+
+      
+      <hr class="mx-auto my-8 h-px w-full max-w-6xl border-0 bg-gradient-to-r from-transparent via-gold to-transparent" />
+
+      <br>
+
+      <img src="assets/studio1.png" alt="Studio Santa Cecília" class="mx-auto mt-8 max-w-[480px] rounded-sm" />
+      <br>
+        <div class="mt-8 grid grid-cols-3 gap-5 max-w-6xl mx-auto text-center max-w-3xl text-muted">
+          <!-- TODO: endereço, telefone e horário de funcionamento reais desta unidade -->
+          <div class="col-span-3 sm:col-span-1">
+          <h6 class="font-bold text-center text-white text-lg">Endereço</h6>
+          <br>
+          <p class="text-center ">Rua Dr. Albuquerque Lins, 312<br>
+                      Santa Cecília - São Paulo</p>
+          </div>
+          <div class="col-span-3 sm:col-span-1">
+          <h6 class="font-bold text-center text-white text-lg">Horário de funcionamento</h6>
+          <br>
+          <p class="text-center">Segunda-feira: 10:00 às 17:00</p>
+          <p class="text-center">Terça-feira a sábado: 09:00 às 19:00</p>
+          <p class="text-center">Domingo: Fechado</p>
+          <p class="text-center">Feriado: Fechado</p>
+          </div>
+          <div class="col-span-3 sm:col-span-1">
+          <h6 class="font-bold text-center text-white text-lg">Telefone</h6>
+          <br>
+          <p class="text-center">(11) 3667-4099</p>
+          </div>
+          </div>
+      </div>
+    </section>
+  </main>
+
+ <section id="contato" class="px-6 py-16">
+      <div class="mx-auto max-w-6xl">
+        <div class="flex flex-wrap items-center justify-between gap-6 rounded-sm border border-ink/15 bg-surface p-10 max-sm:flex-col max-sm:items-start">
+          <div>
+            <h2 class="mb-2 font-display text-3xl">Agende seu horário</h2>
+            <p class="max-w-xl text-muted">Fale com a gente pelo WhatsApp e marque seu horário em minutos.</p>
+          </div>
+          <a id="btn-whatsapp-santa-cecilia" class="inline-flex items-center gap-2 whitespace-nowrap rounded-sm bg-[#25d366] px-5 py-3.5 font-mono text-sm uppercase tracking-wider text-white hover:bg-[#1ebc59]" href="#" target="_blank" rel="noopener" aria-label="WhatsApp Studio Santa Cecília">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="h-5 w-5 fill-current">
+              <path d="M12.04 2C6.58 2 2.15 6.39 2.15 11.85c0 2.08.61 4.12 1.77 5.9L2 22l4.46-1.83c1.67.91 3.54 1.39 5.58 1.39 5.46 0 9.89-4.39 9.89-9.85C21.93 6.39 17.5 2 12.04 2zm0 17.98c-1.72 0-3.38-.47-4.81-1.34l-.35-.2-2.64 1.08 1.09-2.57-.23-.36A7.68 7.68 0 0 1 4.18 11.9c0-4.26 3.48-7.74 7.86-7.74 4.38 0 7.86 3.48 7.86 7.74 0 4.25-3.48 7.74-7.86 7.74zm4.33-5.85c-.24-.12-1.4-.69-1.62-.77-.22-.08-.38-.12-.54.12-.16.24-.62.77-.77.93-.14.16-.28.18-.52.06-.24-.12-1.01-.37-1.93-1.19-.71-.63-1.2-1.41-1.34-1.65-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.19-.46-.39-.4-.54-.4h-.46c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.03s.87 2.35.99 2.51c.12.16 1.7 2.6 4.12 3.65.58.25 1.02.4 1.37.52.58.19 1.1.16 1.52.1.46-.07 1.4-.57 1.6-1.12.2-.55.2-1.02.14-1.12-.06-.1-.22-.16-.46-.28z"/>
+            </svg>
+            <span>Albuquerque Lins</span>
+          </a>
+          <a id="btn-whatsapp-casa-verde" class="inline-flex items-center gap-2 whitespace-nowrap rounded-sm bg-[#25d366] px-5 py-3.5 font-mono text-sm uppercase tracking-wider text-white hover:bg-[#1ebc59]" href="#" target="_blank" rel="noopener" aria-label="WhatsApp Studio Casa Verde">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="h-5 w-5 fill-current">
+              <path d="M12.04 2C6.58 2 2.15 6.39 2.15 11.85c0 2.08.61 4.12 1.77 5.9L2 22l4.46-1.83c1.67.91 3.54 1.39 5.58 1.39 5.46 0 9.89-4.39 9.89-9.85C21.93 6.39 17.5 2 12.04 2zm0 17.98c-1.72 0-3.38-.47-4.81-1.34l-.35-.2-2.64 1.08 1.09-2.57-.23-.36A7.68 7.68 0 0 1 4.18 11.9c0-4.26 3.48-7.74 7.86-7.74 4.38 0 7.86 3.48 7.86 7.74 0 4.25-3.48 7.74-7.86 7.74zm4.33-5.85c-.24-.12-1.4-.69-1.62-.77-.22-.08-.38-.12-.54.12-.16.24-.62.77-.77.93-.14.16-.28.18-.52.06-.24-.12-1.01-.37-1.93-1.19-.71-.63-1.2-1.41-1.34-1.65-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.19-.46-.39-.4-.54-.4h-.46c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.03s.87 2.35.99 2.51c.12.16 1.7 2.6 4.12 3.65.58.25 1.02.4 1.37.52.58.19 1.1.16 1.52.1.46-.07 1.4-.57 1.6-1.12.2-.55.2-1.02.14-1.12-.06-.1-.22-.16-.46-.28z"/>
+            </svg>
+            <span>Casa Verde</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="mt-12">
+    <iframe
+      title="Mapa do Studio Santa Cecília"
+      src="https://www.google.com/maps?q=Studio+Wagner+Cabeleireiros+Santa+Cecilia+Sao+Paulo&z=15&output=embed"
+      class="h-[360px] w-full border-0"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
+
+  <footer class="border-t border-ink/15 gap-6 px-6 py-10 text-[13px] text-muted">
+    <div class="mx-auto flex w-full max-w-6xl flex-wrap justify-between gap-3">
+      <span>© Direitos Reservados | Wagner Cabeleireiros</span>
+      <span>Santa Cecília · Casa Verde — São Paulo, SP</span>
+    </div>
+  </footer>
+
+  <a
+    href="https://wa.me/5511989723130?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20casa%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20Unidade%20Santa%20Cec%C3%ADlia."
+    target="_blank"
+    rel="noopener"
+    aria-label="WhatsApp Studio Santa Cecília"
+    class="fixed bottom-5 right-5 z-50 inline-flex h-14 w-14 items-center justify-center rounded-full bg-[#25d366] text-white shadow-[0_8px_24px_rgba(37,211,102,0.45)] transition hover:scale-105 hover:bg-[#1ebc59]"
+  >
+    <svg viewBox="0 0 24 24" aria-hidden="true" class="h-5 w-5 fill-current">
+      <path d="M12.04 2C6.58 2 2.15 6.39 2.15 11.85c0 2.08.61 4.12 1.77 5.9L2 22l4.46-1.83c1.67.91 3.54 1.39 5.58 1.39 5.46 0 9.89-4.39 9.89-9.85C21.93 6.39 17.5 2 12.04 2zm0 17.98c-1.72 0-3.38-.47-4.81-1.34l-.35-.2-2.64 1.08 1.09-2.57-.23-.36A7.68 7.68 0 0 1 4.18 11.9c0-4.26 3.48-7.74 7.86-7.74 4.38 0 7.86 3.48 7.86 7.74 0 4.25-3.48 7.74-7.86 7.74zm4.33-5.85c-.24-.12-1.4-.69-1.62-.77-.22-.08-.38-.12-.54.12-.16.24-.62.77-.77.93-.14.16-.28.18-.52.06-.24-.12-1.01-.37-1.93-1.19-.71-.63-1.2-1.41-1.34-1.65-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.19-.46-.39-.4-.54-.4h-.46c-.16 0-.42.06-.64.3-.22.24-.85.83-.85 2.03s.87 2.35.99 2.51c.12.16 1.7 2.6 4.12 3.65.58.25 1.02.4 1.37.52.58.19 1.1.16 1.52.1.46-.07 1.4-.57 1.6-1.12.2-.55.2-1.02.14-1.12-.06-.1-.22-.16-.46-.28z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script> 
+  <script>
+    document.getElementById("ano-atual").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

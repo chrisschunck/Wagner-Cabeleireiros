@@ -385,7 +385,6 @@ const equipe_casa_verde = [
   { id: "eq-018", nome: "Evellyn Oliveira", cargo: "Cabeleireira/Lash Designer", foto: "assets/evellyn.jpg" },
   { id: "eq-019", nome: "Andrea de Oliveira", cargo: "Nail Designer", foto: "assets/andrea.jpg" },
   { id: "eq-020", nome: "Max Santos", cargo: "Estetica facial e corporal", foto: "assets/max.jpg" },
-  { id: "eq-021", nome: "Lia Maria", cargo: "Manicure/Pedicure", foto: "assets/lia.jpg" },
 ];
 
 // ---------- Formatação ----------

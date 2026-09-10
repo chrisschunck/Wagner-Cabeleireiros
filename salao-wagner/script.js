@@ -399,7 +399,7 @@ function formatarPreco(valor) {
 
 function criarCardProduto(produto) {
   const card = document.createElement("article");
-  card.className = "flex h-full flex-col rounded-sm border border-ink/15 bg-surface p-3";
+  card.className = "flex h-full w-[250px] min-w-[250px] shrink-0 snap-start flex-col rounded-sm border border-ink/15 bg-surface p-3";
 
   const foto = document.createElement("div");
   foto.className = "mb-3.5 flex aspect-[4/5] items-center justify-center overflow-hidden rounded-md border border-dashed border-ink/15 bg-surface-2 text-center font-mono text-[11px] text-muted";
@@ -429,20 +429,75 @@ function criarCardProduto(produto) {
   return card;
 }
 
+function normalizarTexto(texto) {
+  return texto
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .trim();
+}
+
+function produtoPassaNoFiltro(produto, busca, categoria, faixaPreco) {
+  const textoProduto = normalizarTexto(`${produto.nome} ${produto.categoria}`);
+  const correspondeBusca = !busca || textoProduto.includes(normalizarTexto(busca));
+  const correspondeCategoria = !categoria || produto.categoria === categoria;
+
+  if (!correspondeBusca || !correspondeCategoria) return false;
+  if (!faixaPreco) return true;
+  if (faixaPreco === "sem-preco") return produto.preco === null || produto.preco === undefined;
+  if (produto.preco === null || produto.preco === undefined) return false;
+
+  const [minimo, maximo] = faixaPreco.split("-");
+  if (faixaPreco === "60+") return produto.preco > 60;
+  if (faixaPreco === "0-25") return produto.preco <= 25;
+  return produto.preco > Number(minimo) && produto.preco <= Number(maximo);
+}
+
+function preencherCategoriasCatalogo() {
+  const seletor = document.getElementById("catalogo-category");
+  if (!seletor) return;
+
+  const categorias = [...new Set(produtos.map((produto) => produto.categoria))].sort((a, b) => a.localeCompare(b, "pt-BR"));
+  categorias.forEach((categoria) => {
+    const opcao = document.createElement("option");
+    opcao.value = categoria;
+    opcao.textContent = categoria;
+    seletor.appendChild(opcao);
+  });
+}
+
 function renderizarCatalogo() {
   const grid = document.getElementById("catalogo-grid");
   if (!grid) return;
 
-  if (produtos.length === 0) {
+  const busca = document.getElementById("catalogo-search")?.value || "";
+  const categoria = document.getElementById("catalogo-category")?.value || "";
+  const faixaPreco = document.getElementById("catalogo-price")?.value || "";
+  const produtosFiltrados = produtos.filter((produto) => produtoPassaNoFiltro(produto, busca, categoria, faixaPreco));
+
+  if (produtosFiltrados.length === 0) {
     grid.dataset.state = "empty";
-    grid.dataset.message = "Catálogo em atualização.";
+    grid.dataset.message = "Nenhum produto encontrado.";
+    const mensagem = document.createElement("p");
+    mensagem.className = "min-w-full py-8 text-center text-muted";
+    mensagem.textContent = produtos.length === 0 ? "Catálogo em atualização." : "Nenhum produto encontrado para esses filtros.";
+    grid.replaceChildren(mensagem);
     return;
   }
 
   grid.dataset.state = "";
   const fragmento = document.createDocumentFragment();
-  produtos.forEach((produto) => fragmento.appendChild(criarCardProduto(produto)));
+  produtosFiltrados.forEach((produto) => fragmento.appendChild(criarCardProduto(produto)));
   grid.replaceChildren(fragmento);
+}
+
+function configurarFiltrosCatalogo() {
+  const busca = document.getElementById("catalogo-search");
+  const categoria = document.getElementById("catalogo-category");
+  const faixaPreco = document.getElementById("catalogo-price");
+  [busca, categoria, faixaPreco].forEach((controle) => {
+    controle?.addEventListener(controle === busca ? "input" : "change", renderizarCatalogo);
+  });
 }
 
 // ---------- Renderização: equipe ----------
@@ -558,6 +613,8 @@ function configurarBotaoWhatsappCasaVerde() {
 // ---------- Inicialização ----------
 
 document.addEventListener("DOMContentLoaded", () => {
+  preencherCategoriasCatalogo();
+  configurarFiltrosCatalogo();
   renderizarCatalogo();
   renderizarEquipeSantaCecilia();
   renderizarEquipeCasaVerde();

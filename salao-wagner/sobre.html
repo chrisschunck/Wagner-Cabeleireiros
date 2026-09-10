@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Sobre — Wagner Cabeleireiros</title>
+	<meta name="description" content="Conheça a história do Wagner Cabeleireiros, desde 1987 em São Paulo." />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..700&family=Public+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script>
+		tailwind.config = { theme: { extend: {
+			colors: { ink: "#f4efe6", muted: "#9c9188", gold: "#c9a24b", charcoal: "#14110f", surface: "#1d1815" },
+			fontFamily: { display: ["Fraunces", "serif"], body: ["Public Sans", "sans-serif"], mono: ["Space Mono", "monospace"], wagner: ["Alex Brush", "cursive"] }
+		} } };
+	</script>
+</head>
+<body class="bg-charcoal text-ink font-body text-base leading-relaxed antialiased">
+	<header class="sticky top-0 z-10 bg-white border-b border-ink/15 bg-charcoal/90 backdrop-blur-md">
+		<div class="mx-auto flex flex-wrap items-center justify-between gap-6 px-6 py-3.5">
+			<a class="flex items-center gap-3 font-display text-xl tracking-wide text-ink" href="index.html">
+				<img class="h-20 w-auto" src="assets/logo.png" alt="Studio Wagner Cabeleireiros" />
+			</a>
+			<nav class="flex flex-wrap items-center gap-x-7 gap-y-2 font-mono text-sm uppercase tracking-wider" aria-label="Navegação principal">
+				<a href="index.html" class="text-gold">Início</a>
+				<a href="index.html#unidades" class="rounded-sm border border-gold px-2 py-1 text-gold hover:bg-gold hover:text-charcoal">Studios</a>
+				<a href="index.html#catalogo" class="text-gold">Catálogo</a>
+				<a href="index.html#contato" class="text-gold">Contato</a>
+				<a href="sobre.html" aria-current="page" class="text-gold">Sobre</a>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="px-6 py-24 text-center">
+			<div class="mx-auto max-w-4xl">
+				<p class="mb-4 font-mono text-xs uppercase tracking-[0.18em] text-white">Desde 1987 · São Paulo</p>
+				<h1 class="font-display text-5xl text-gold sm:text-7xl">Nossa história</h1>
+				<p class="mx-auto mt-6 max-w-2xl text-lg text-muted">Uma trajetória construída com técnica, atenção e respeito por cada pessoa que passa pelos Studios Wagner Cabeleireiros.</p>
+			</div>
+		</section>
+
+		<section class="border-y border-ink/15 bg-surface/40 px-6 py-16">
+			<div class="mx-auto max-w-4xl">
+				<div class="space-y-10">
+					<article class="grid gap-4 border-l-2 border-gold pl-6 sm:grid-cols-[120px_1fr] sm:gap-8">
+						<p class="font-mono text-2xl text-gold">1987</p>
+						<div>
+							<h2 class="mb-2 font-display text-2xl text-white">O começo em Santa Cecília</h2>
+							<p class="text-muted">Wagner Cabeleireiros abriu seu primeiro Studio no bairro Santa Cecília, em São Paulo, dando início a uma história construída perto dos clientes.</p>
+						</div>
+					</article>
+					<article class="grid gap-4 border-l-2 border-gold pl-6 sm:grid-cols-[120px_1fr] sm:gap-8">
+						<p class="font-mono text-2xl text-gold">1997</p>
+						<div>
+							<h2 class="mb-2 font-display text-2xl text-white">A chegada à Casa Verde</h2>
+							<p class="text-muted">Em junho de 1997, o Studio II abriu suas portas na Casa Verde para levar a experiência Wagner a mais clientes.</p>
+						</div>
+					</article>
+					<article class="grid gap-4 border-l-2 border-gold pl-6 sm:grid-cols-[120px_1fr] sm:gap-8">
+						<p class="font-mono text-2xl text-gold">Hoje</p>
+						<div>
+							<h2 class="mb-2 font-display text-2xl text-white">A mesma essência</h2>
+							<p class="text-muted">Sob a coordenação de Wagner Coelho, os dois Studios seguem unindo beleza, conforto e atendimento personalizado, com cada cliente no centro da experiência.</p>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section class="px-6 py-16">
+			<div class="mx-auto max-w-6xl">
+				<div class="mb-9 max-w-3xl">
+					<p class="mb-3 font-mono text-xs uppercase tracking-widest text-gold">Nossa forma de cuidar</p>
+					<h2 class="font-display text-4xl">Por que escolher Wagner?</h2>
+				</div>
+				<div class="grid gap-4 sm:grid-cols-3">
+					<article class="rounded-sm border border-ink/15 bg-surface p-6">
+						<h3 class="mb-2 font-display text-xl text-gold">Experiência</h3>
+						<p class="text-sm text-muted">Uma história que atravessa décadas sem perder a atenção aos detalhes.</p>
+					</article>
+					<article class="rounded-sm border border-ink/15 bg-surface p-6">
+						<h3 class="mb-2 font-display text-xl text-gold">Cuidado próximo</h3>
+						<p class="text-sm text-muted">Entendemos o que você procura para construir um atendimento que faça sentido para o seu estilo.</p>
+					</article>
+					<article class="rounded-sm border border-ink/15 bg-surface p-6">
+						<h3 class="mb-2 font-display text-xl text-gold">Duas unidades</h3>
+						<p class="text-sm text-muted">Santa Cecília e Casa Verde: escolha o Studio mais conveniente para você.</p>
+					</article>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="border-t border-ink/15 bg-white px-6 py-8 text-[13px] text-muted">
+		<div class="mx-auto flex w-full max-w-6xl flex-wrap justify-between gap-3">
+			<span>© Direitos Reservados | Wagner Cabeleireiros</span>
+			<span>Santa Cecília · Casa Verde — São Paulo, SP</span>
+		</div>
+	</footer>
+</body>
+</html>

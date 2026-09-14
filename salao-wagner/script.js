@@ -363,7 +363,7 @@ const produtos = [
 // TODO: trocar "foto" pelo caminho em assets/img/equipe/ quando chegarem.
 const equipe_santa_cecília = [
   { id: "eq-001", nome: "Eliane Ribeiro", cargo: "Auxiliar", foto: "assets/eliane_freitas.jpg" },
-  { id: "eq-002", nome: "Christian Schunck", cargo: "Recepcionista", foto: "assets/christian_schunck.jpg" },
+  { id: "eq-002", nome: "Christian Schunck", cargo: "Recepcionista", foto: "assets/christian.jfif" },
   { id: "eq-003", nome: "Cris Camargo", cargo: "Recepcionista", foto: "assets/cris_camargo.jpg" },
   { id: "eq-004", nome: "Juliana Rocha", cargo: "Manicure/Pedicure", foto: "assets/juliana.jpg" },
   { id: "eq-005", nome: "Wagner Coelho", cargo: "Barbeiro/Boss", foto: "assets/wagner.jpg" },

@@ -586,7 +586,7 @@ function configurarBotaoWhatsappSantaCecilia() {
   const botao = document.getElementById("btn-whatsapp-santa-cecilia");
   if (!botao) return;
 
-  const mensagem = "Olá! Vim pelo site da casa e gostaria de agendar um horário.";
+  const mensagem = "Olá! Vim pelo site e gostaria de agendar um horário na unidade Santa Cecília.";
   botao.href = montarLinkWhatsapp(whatssapp_numero_santa_cecilia, mensagem);
 }
 
@@ -594,7 +594,7 @@ function configurarBotaoWhatsappCasaVerde() {
   const botao = document.getElementById("btn-whatsapp-casa-verde");
   if (!botao) return;
 
-  const mensagem = "Olá! Vim pelo site da casa e gostaria de agendar um horário.";
+  const mensagem = "Olá! Vim pelo site e gostaria de agendar um horário na unidade Casa Verde.";
   botao.href = montarLinkWhatsapp(whatssapp_numero_casa_verde, mensagem);
 }
 

@@ -369,7 +369,7 @@ const equipe_santa_cecília = [
   { id: "eq-005", nome: "Wagner Coelho", cargo: "Barbeiro/Boss", foto: "assets/Wagner.jfif" },
   { id: "eq-006", nome: "Carlos Eduardo (Cadu)", cargo: "Barbeiro/Cabeleireiro masculino", foto: "assets/carlos_eduardo.jpg" },
   { id: "eq-007", nome: "Nilson Nunes", cargo: "Barbeiro/Cabeleireiro", foto: "assets/nilson_nunes.jpg" },
-  { id: "eq-008", nome: "Solange Passarini (Sol)", cargo: "Cabeleireira", foto: "assets/solange_passarini.jpg" },
+  { id: "eq-008", nome: "Solange Passarini (Sol)", cargo: "Cabeleireira", foto: "assets/Solange.jfif" },
   { id: "eq-009", nome: "Creuza Araújo", cargo: "Manicure/Pedicure", foto: "assets/creuza_araujo.jpg" },
   { id: "eq-010", nome: "Joh Fonseca (Jo)", cargo: "Barbeiro/Cabeleireiro", foto: "assets/joh_fonseca.jpg" },
   { id: "eq-011", nome: "Taciana Soares", cargo: "Podologa/Manicure/Pedicure", foto: "assets/taciana_soares.jpg" },
